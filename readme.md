@@ -7,4 +7,4 @@
 # you can see prod mode by running following commands
 
   `ng build --prod`
-  `lite-server --baseDir="dist/project-name"`
+  `lite-server --baseDir="dist/ang-user-gallery"`
