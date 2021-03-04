@@ -1,3 +1,7 @@
+
+## hostings:
+* [*firebase*](https://phones-web-app.web.app)
+
 ## start commands:
 
 * v1:

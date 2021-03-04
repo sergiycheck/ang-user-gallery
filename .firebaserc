@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "phones-web-app": {
+      "hosting": {
+        "ang-user-gallery": [
+          "phones-web-app"
+        ]
+      }
+    }
+  }
+}

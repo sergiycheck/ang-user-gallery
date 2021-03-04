@@ -3,3 +3,11 @@ C:/Users/sergi/source//ang_app/ang-user-gallery/src/app/user-messages/user-messa
 
 ERROR in Exceeded maximum budget for
 C:/Users/sergi/source/repos/My_Web_Apps/social gallery web-app/project/ang_app/ang-user-gallery/src/app/app-component/app.component.scss. Budget 10 kB was not met by 139 kB with a total of 149 kB.
+
+
+/docs/index.html base attribute error can't get json from assets/data
+making  xhr request error 404 OK
+It making requests here "https://sergiycheck.github.io/assets/data/videos.json"
+but it is here https://sergiycheck.github.io/ang-user-gallery/docs/assets/data/videos.json
+
+gh-pages error 404 on refresh home component

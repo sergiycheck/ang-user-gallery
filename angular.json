@@ -71,7 +71,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "ang-user-gallery:build",
-            "port":4410
+            "port": 4410
           },
           "configurations": {
             "production": {
@@ -126,6 +126,10 @@
               "devServerTarget": "ang-user-gallery:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
