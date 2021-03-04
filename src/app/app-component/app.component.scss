@@ -45,9 +45,9 @@ $svg-search-icon:url("../../assets/img/search.svg");
 
   @include media-breakpoint-up(
     map-get($map: $grid-breakpoints, $key: md )){
-    //&.focus {
+    &.focus {
       width: 135%;
-    //}
+    }
   }
 
 }
