@@ -1,0 +1,83 @@
+
+
+<div class="wrapper">
+
+  <nav class="navbar navbar-expand-md fixed-top navbar-light shadow p-0 bg-light" role="navigation">
+    <div class="container  text-dark">
+
+      <a id="loadHomePage" class="navbar-brand" routerLink="/home">Home</a>
+
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="row w-100 ">
+
+          <div class="col">
+            <ul class="nav navbar-nav">
+              <li class="p-2">
+                <a routerLink="/explore" class="nav-link">Explore</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="seach-col col-md-auto">
+            <div class="mt-2">
+              <form class="">
+                <input id="search" class="form-control"
+                  type="search" placeholder=""
+                  aria-label="Search">
+              </form>
+            </div>
+
+          </div>
+
+          <div class="col col-md-auto">
+            <div class="nav navbar-nav d-flex justify-content-end">
+
+              <a class="nav-link" routerLink="/messages"
+                id="loadUserMessages">Messages</a>
+
+              <a id="loadProfile" class="nav-link"
+                routerLink="/profile">Profile</a>
+
+              <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#"
+                  role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Manage
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <main class="mainContent">
+
+    <router-outlet></router-outlet>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+</div>
+
