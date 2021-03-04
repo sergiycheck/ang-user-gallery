@@ -46,4 +46,4 @@ testem.log
 Thumbs.db
 todo
 commands
-
+package-lock.json
