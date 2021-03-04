@@ -1,14 +1,31 @@
 
-@import '../../../node_modules/bootstrap/scss/bootstrap';
-@import '../../../node_modules/bootstrap/scss/variables';
-@import '../../../node_modules/bootstrap/scss//mixins';
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 
-// refresh page to apply styles from scss
+
+@mixin media-breakpoint-down($var){
+  @media (max-width:$var){
+    @content
+  }
+}
+
+@mixin transition($var){
+  transition: $var all ease;
+}
 
 // $primary: #654da7;
 // $white: #ffff;
 $sidebarWidth:450px;
 $sideBarAHover:rgba(28, 140, 252, 0.79);
+$white:#fff;
+$black:#000;
+$primary:#0d6efd;
 
 .sidebar {
   min-width: $sidebarWidth;
@@ -64,7 +81,9 @@ $sideBarAHover:rgba(28, 140, 252, 0.79);
     	}
     }
   }
-  @include media-breakpoint-down(md){
+
+  @include media-breakpoint-down(
+    map-get($map: $grid-breakpoints, $key: lg )){
     margin-left: -$sidebarWidth;
     &.active {
       margin-left: 0;
@@ -74,6 +93,7 @@ $sideBarAHover:rgba(28, 140, 252, 0.79);
     	top: 10px !important;
     }
   }
+
 	a {
 		transition: .3s all ease;
 		// color: $primary;
