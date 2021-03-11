@@ -32,7 +32,7 @@ $primary:#0d6efd;
   max-width: $sidebarWidth;
   // background: rgb(133, 196, 206);
   color:$white;
-  transition: all 0.3s;
+  transition: all 0.1s;
   position: relative;
   .h6{
   	color: $black;
@@ -95,7 +95,7 @@ $primary:#0d6efd;
   }
 
 	a {
-		transition: .3s all ease;
+		transition: .1s all ease;
 		// color: $primary;
 		text-decoration: none !important;
 		&:hover, &:focus {
@@ -105,7 +105,7 @@ $primary:#0d6efd;
 		}
 	}
 	button {
-		transition: .3s all ease;
+		transition: .1s all ease;
 		&:hover, &:focus {
 			text-decoration: none !important;
 			outline: none !important;
@@ -119,7 +119,7 @@ $primary:#0d6efd;
 		top: 50px;
 		right: 0;
 		margin-right: -20px;
-		@include transition(.3s);
+		@include transition(.2s);
 		.btn{
 			width: 40px;
 			height: 40px;
